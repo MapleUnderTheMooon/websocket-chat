@@ -94,6 +94,8 @@ const handleEnterBtnClick = () => {
       // localStorage.setItem('uid', data.uid);
       // localStorage.setItem('sessionID', data.sessionID);
       console.log("kkk")
+      // Home 挂载时，需要 username 值
+      localStorage.setItem("username", username.value.trim());
       router.push({ path: '/' }).catch(err => {
         console.error(err);
       });
